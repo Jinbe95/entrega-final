@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Link de tu CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <!-- Banner principal -->
+    <header class="bg-dark py-4">
+        <div class="container">
+            <img src="../img/logo-doom-png.png" alt="Banner" class="img-fluid">
+            <nav>
+                <ul class="nav justify-content-center mt-3">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="producto.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="campanias.html">Campañas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <hr>
+  <!-- Sección Contacto -->
+  <section class="contacto py-5">
+    <div class="container">
+        <h1 class="text-center mb-4">Contáctanos</h1>
+        <p class="text-center mb-5">Por favor, complete el siguiente formulario y nos pondremos en contacto contigo lo antes posible.</p>
+    
+        <form action="/submit" method="post" class="formulariocontacto">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="nombre" class="form-label text-light">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" class="form-control form-control-lg">
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="apellido" class="form-label text-light">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" class="form-control form-control-lg">
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="telefono" class="form-label text-light">Teléfono</label>
+                    <input type="text" name="telefono" id="telefono" class="form-control form-control-lg">
+                </div>
+
+                <div class="col-md-12 mb-3">
+                    <label for="email" class="form-label text-light">E-mail</label>
+                    <input type="email" name="email" id="email" class="form-control form-control-lg">
+                </div>
+
+                <div class="col-12 mb-3">
+                    <label for="mensaje" class="form-label text-light">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" class="form-control form-control-lg" rows="5"></textarea>
+                </div>
+
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+<footer class="bg-dark text-white py-3 text-center">
+    <p>Todos los derechos reservados</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
