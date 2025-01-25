@@ -1,0 +1,43 @@
+// mixin para flex
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+
+@mixin nav{
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    gap: 35px;
+}
+
+@mixin footer{
+    text-align: center;
+   color: $color-footer;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 15px;
+   padding: 10px; 
+}
+
+@mixin section{
+    display:flex;
+    align-items: center;
+}
+
+@mixin campanias($display, $grid-template-columns, $grid-template-rows){
+    display: $display;
+    grid-template-columns: $grid-template-columns;
+    grid-template-rows: $grid-template-rows;
+    padding: 1.5rem;
+    gap: 1.5rem;
+}
+
+@mixin estiloscampanias{
+    background-color: $estilos-campanias;
+    border-radius: 8px;
+    padding: 18px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+    margin-right: 50px;
+}

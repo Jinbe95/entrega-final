@@ -1,0 +1,101 @@
+/* Estilos de mobile */
+
+/* Nosotros */
+
+@media screen and (max-width: 768px){
+    header{
+        nav{
+            ul{
+                display: grid;
+                list-style: none;
+                gap: 10px;
+            }
+            li{
+                a{
+                    color: $color-texto;
+                    text-decoration: none;
+                    font-size: 5px;
+                }
+            }
+        }
+    }
+
+    .doomguy{
+        width: 100%; //contenerdor se adapta al dispositivo
+    }
+
+    section{
+        h1{
+            font-size: 24px;
+            padding: 10px;
+        }
+    }
+
+    .migif{
+        width: 50%; //tamanio del gif aumentado para el dispositivo
+    }
+
+    .maps{
+        flex-direction: column; //cambio de columna para mas espacio
+    }
+
+    .nosotros{
+        padding: 15px;
+        width: 100%;
+    }
+}
+
+
+
+/* Campanias */
+
+@media screen and (max-width: 768px){
+
+    header{
+        nav{
+            ul{
+                display: grid;
+                list-style: none;
+                gap: 10px;
+            }
+            li{
+                a{
+                    color: $color-texto;
+                    text-decoration: none;
+                    font-size: 5px;
+                }
+            }
+        }
+    }
+
+    
+    .campanias{
+        grid-template-columns: 1fr;
+        flex-direction: column; //cambia el layout a columna en mobile
+        h1{
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .Daisy, .armas, .exterminio{
+        width: 100%; 
+        grid-column: span 3;
+    }
+
+    .Daisy{
+        img{
+            width: 100%;
+        }
+    }
+
+    .exterminio{
+        img{
+            width: 100%;
+        }
+    }
+}

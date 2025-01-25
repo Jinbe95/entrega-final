@@ -1,0 +1,91 @@
+/* Estilos para desktop */
+
+/* nosotros */
+
+@media screen and (min-width: 1024px) {
+    header{
+        nav{
+            ul{
+                display: flex;
+                list-style: none;
+                gap:20px
+            }
+            li{
+                a{
+                    color: $color-texto;
+                    text-decoration: none;
+                    gap: 20px;
+                }
+            }
+        }
+    }
+    
+    .doomguy{
+        width: 20%;
+    }
+
+    section{
+        h1{
+            font-size: 36px;
+            padding: 20px;
+        }
+    }
+
+    .migif{
+        width: 25%;
+    }
+
+    .maps{
+        flex-direction: row;
+    }
+    
+    .nosotros{
+        padding: 30px;
+        width: 70%;
+        gap: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .campanias{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1.5em;
+    }
+    h1{
+        font-size: 40px;
+        margin-bottom: 40px;
+        grid-column: span 3;
+    }
+    p{
+        font-size: 25px;
+        margin-bottom: 15px;
+        grid-column: span 3;
+    }
+    .Daisy, .armas, .exterminio{
+        width: auto;
+    }
+
+    .Daisy{
+        grid-column: span 1;
+        img{
+            width: 50%;
+        }
+    }
+
+    .armas, .exterminio{
+        grid-column: span 1;
+    }
+
+    .armas{
+        img{
+            width: 100%;
+        }
+    }
+
+    .exterminio{
+        img{
+            width: 87%;
+        }
+    }
+}
