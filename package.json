@@ -1,14 +1,14 @@
 {
-  "name": "preentrega-3--herrera",
+  "name": "preentrega-4--herrera",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/Jinbe95/Preentrega-2-AgustinHerrera#readme",
+  "homepage": "https://github.com/Jinbe95/3ra-entrega#readme",
   "bugs": {
-    "url": "https://github.com/Jinbe95/Preentrega-2-AgustinHerrera/issues"
+    "url": "https://github.com/Jinbe95/3ra-entrega/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jinbe95/Preentrega-2-AgustinHerrera.git"
+    "url": "git+https://github.com/Jinbe95/3ra-entrega.git"
   },
   "license": "ISC",
   "author": "",

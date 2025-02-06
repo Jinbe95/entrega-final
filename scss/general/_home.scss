@@ -1,5 +1,65 @@
 @import "../utilidades/mixin";
 
+
+
+/* Navbar */
+
+/* Estilos para el botón del menú */
+.navbar-toggler {
+    position: relative;
+    width: 35px;
+    height: 30px;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  
+  /* Ocultar el icono original de Bootstrap */
+  .navbar-toggler .navbar-toggler-icon {
+    display: none;
+  }
+  
+  /* Creacion de las tres líneas del menu */
+  .navbar-toggler::before,
+  .navbar-toggler::after,
+  .navbar-toggler span {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #66b2b2;
+    left: 0;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  /* Posicion de las lineas */
+  .navbar-toggler::before {
+    top: 0;
+  }
+  
+  .navbar-toggler span {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .navbar-toggler::after {
+    bottom: 0;
+  }
+  
+  /* Animación cuando el menú está abierto */
+  .navbar-toggler:focus-within::before {
+    transform: translateY(11px) rotate(45deg);
+  }
+  
+  .navbar-toggler:focus-within::after {
+    transform: translateY(-11px) rotate(-45deg);
+  }
+  
+  .navbar-toggler:focus-within span {
+    opacity: 0;
+  }
+  
+
 /* Index */
 
 /* estilos de header */
